@@ -7,8 +7,8 @@ const botService = new skype.BotService({
         botId: "",
         serverUrl : "https://apis.skype.com",
         requestTimeout : 15000,
-        appId: "bbcbfbd6-1d1a-4231-9f44-6d6d3ebc52c8",
-        appSecret: "V0SDC0HchgQJKabpxmEo17p"
+        appId: process.env.APP_ID,
+        appSecret: process.env.APP_SECRET
     }
 });
 
